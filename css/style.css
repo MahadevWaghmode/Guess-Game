@@ -1,0 +1,30 @@
+body {
+    background-color: green;
+    }
+
+
+#cards {
+    margin-top: 140px;
+    width: 400;
+
+}
+
+#result {
+    text-align: center;
+    visibility: hidden;
+}
+
+img {
+    position: relative;
+    margin-top: -120px;
+    margin-left: 20px;
+    background-color:red;
+}
+
+#result h1 {
+    top: 100px;
+}
+
+#res {
+    margin-top: 10px;
+}
