@@ -2,7 +2,9 @@ body {
     background-color: green;
     }
 
-
+#main{
+    transition: all .5s ;
+}
 #cards {
     margin-top: 140px;
     width: 400;
@@ -11,20 +13,65 @@ body {
 
 #result {
     text-align: center;
-    visibility: hidden;
 }
 
-img {
+#cards img {
     position: relative;
     margin-top: -120px;
     margin-left: 20px;
     background-color:red;
 }
 
-#result h1 {
-    top: 100px;
-}
 
 #res {
     margin-top: 10px;
+}
+#check{
+    position: absolute;
+    visibility: hidden;
+}
+#menu{
+    font-size: 40px;
+    color:rgb(36, 35, 35);
+}
+.slide-bar{
+    position: absolute;
+    width: 300;
+    height: 100%;
+    left: -300px;
+    transition: .5s;
+    background-color: rgb(13, 43, 13);
+}
+.slide-bar header{
+    text-align: center;
+    line-height: 70px;
+    background-color: rgba(0, 255, 21, 0.459);
+    font-size: 25px;
+}
+.slide-bar li{
+    list-style-type: none;
+    border-bottom: solid 1px rgba(0, 0, 0,.1);
+    /* text-align: center; */
+    padding-left: 115px;
+    transition:all 0.3s ; 
+}
+.slide-bar a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 20px 0px;
+    color:white;
+}
+.slide-bar li:hover{
+    margin-left: -10px;
+}
+.slide-bar ul{
+    margin: 0;
+    padding: 0;
+}
+#check:checked ~ #main{
+    margin-left:300px;
+}
+#check:checked ~ .slide-bar{
+    left:0px;
 }
