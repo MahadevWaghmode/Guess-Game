@@ -2,86 +2,67 @@
 
 <head>
     <title>Guiss Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <style>
-        body {
-            background-color: green;
-        }
-
-        #cards {
-            margin-top: 140px;
-            ;
-            width: 400;
-
-        }
-
-        #result {
-            text-align: center;
-        }
-
-        img {
-            position: relative;
-            margin-top: -120px;
-            margin-left: 20px;
-            background-color: aqua;
-        }
-
-        #result h1 {
-            top: 100px;
-        }
-
-        #res {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <button id="dbtn" onclick="display()">Start</button>
-<div id="main" style="display: none;">
-    <div id="cards">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
-        <img src="" style="display: none;" class="card" alt="" width="100">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="menu"></i>
+    </label><br>
+    <div class="slide-bar"> 
+        <header>Menu</header>
+        <ul>
+            <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"> how to play</i></a></li>
+            <li><a href="#"><i class="fa fa-address-card" aria-hidden="true"> About us</a></i></li>
+        </ul>
     </div>
-    <b>
-        <label style="margin-left: 50px;">Deck 1</label>
-        <label style="margin-left: 75px;">Deck 2</label>
-        <label style="margin-left: 70px;">Deck 3</label>
-    </b>
+    <div id="main">
+        <div id="cards">
+            <img class="card" src="img/1.png" width="100">
+            <img class="card" src="img/2.png" width="100">
+            <img class="card" src="img/3.png" width="100">
+            <img class="card" src="img/4.png" width="100">
+            <img class="card" src="img/5.png" width="100">
+            <img class="card" src="img/6.png" width="100">
+            <img class="card" src="img/7.png" width="100">
+            <img class="card" src="img/8.png" width="100">
+            <img class="card" src="img/9.png" width="100">
+            <img class="card" src="img/10.png" width="100">
+            <img class="card" src="img/11.png" width="100">
+            <img class="card" src="img/12.png" width="100">
+            <img class="card" src="img/13.png" width="100">
+            <img class="card" src="img/2D.png" width="100">
+            <img class="card" src="img/3D.png" width="100">
+            <img class="card" src="img/5H.png" width="100">
+            <img class="card" src="img/6S.png" width="100">
+            <img class="card" src="img/8D.png" width="100">
+            <img class="card" src="img/9D.png" width="100">
+            <img class="card" src="img/10H.png" width="100">
+            <img class="card" src="img/AS.png" width="100">
+        </div>
+        <b>
+            <label style="margin-left: 50px;">Deck 1</label>
+            <label style="margin-left: 75px;">Deck 2</label>
+            <label style="margin-left: 70px;">Deck 3</label>
+        </b>
 
-    <div id="div1">
-        <br>
-        <label> Select deck </label>
-        <select id="sbox">
-            <option value="1">Deck 1</option>
-            <option value="2">Deck 2</option>
-            <option value="3">Deck 3</option>
-        </select>
-        <label style="color:yellow;">! Make sure your selected correct deck<br>then press submit</label>
-        <br>
-        <button id="dbtn" onclick="shuffle()">submit</button>
+        <div id="div1">
+            <br>
+            <label> Select deck </label>
+            <select id="sbox">
+                <option value="1">Deck 1</option>
+                <option value="2">Deck 2</option>
+                <option value="3">Deck 3</option>
+            </select>
+            <label style="color:yellow;">! Make sure your selected correct deck<br>then press submit</label>
+            <br>
+            <button id="dbtn" onclick="shuffle()">submit</button>
+        </div>
     </div>
-</div>
     <div id="result" style="display:none">
         <br>
         <h1>Your card is </h1><br>
