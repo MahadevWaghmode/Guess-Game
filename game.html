@@ -9,56 +9,57 @@
 </head>
 
 <body>
-   
-    <div id="main">
-        <div id="cards">
-            <img class="card" src="img/1.png" width="100">
-            <img class="card" src="img/2.png" width="100">
-            <img class="card" src="img/3.png" width="100">
-            <img class="card" src="img/4.png" width="100">
-            <img class="card" src="img/5.png" width="100">
-            <img class="card" src="img/6.png" width="100">
-            <img class="card" src="img/7.png" width="100">
-            <img class="card" src="img/8.png" width="100">
-            <img class="card" src="img/9.png" width="100">
-            <img class="card" src="img/10.png" width="100">
-            <img class="card" src="img/11.png" width="100">
-            <img class="card" src="img/12.png" width="100">
-            <img class="card" src="img/13.png" width="100">
-            <img class="card" src="img/2D.png" width="100">
-            <img class="card" src="img/3D.png" width="100">
-            <img class="card" src="img/5H.png" width="100">
-            <img class="card" src="img/6S.png" width="100">
-            <img class="card" src="img/8D.png" width="100">
-            <img class="card" src="img/9D.png" width="100">
-            <img class="card" src="img/10H.png" width="100">
-            <img class="card" src="img/AS.png" width="100">
-        </div>
-        <b>
-            <label style="margin-left: 50px;">Deck 1</label>
-            <label style="margin-left: 75px;">Deck 2</label>
-            <label style="margin-left: 70px;">Deck 3</label>
-        </b>
+    <div class="center">
+        <div id="main">
+            <div id="cards">
+                <img class="card" src="img/1.png" width="100">
+                <img class="card" src="img/2.png" width="100">
+                <img class="card" src="img/3.png" width="100">
+                <img class="card" src="img/4.png" width="100">
+                <img class="card" src="img/5.png" width="100">
+                <img class="card" src="img/6.png" width="100">
+                <img class="card" src="img/7.png" width="100">
+                <img class="card" src="img/8.png" width="100">
+                <img class="card" src="img/9.png" width="100">
+                <img class="card" src="img/10.png" width="100">
+                <img class="card" src="img/11.png" width="100">
+                <img class="card" src="img/12.png" width="100">
+                <img class="card" src="img/13.png" width="100">
+                <img class="card" src="img/2D.png" width="100">
+                <img class="card" src="img/3D.png" width="100">
+                <img class="card" src="img/5H.png" width="100">
+                <img class="card" src="img/6S.png" width="100">
+                <img class="card" src="img/8D.png" width="100">
+                <img class="card" src="img/9D.png" width="100">
+                <img class="card" src="img/10H.png" width="100">
+                <img class="card" src="img/AS.png" width="100">
+            </div>
+            <b>
+                <label style="margin-left: 50px;">Deck 1</label>
+                <label style="margin-left: 75px;">Deck 2</label>
+                <label style="margin-left: 70px;">Deck 3</label>
+            </b>
 
-        <div id="div1">
+            <div id="div1">
+                <br>
+                <label> Select deck </label>
+                <select id="sbox">
+                    <option value="1">Deck 1</option>
+                    <option value="2">Deck 2</option>
+                    <option value="3">Deck 3</option>
+                </select>
+                <label style="color:yellow;">! Make sure your selected correct deck<br>then press submit</label>
+                <br>
+                <button id="dbtn" onclick="shuffle()">submit</button>
+            </div>
+        </div>
+        <div id="result" style="display:none">
             <br>
-            <label> Select deck </label>
-            <select id="sbox">
-                <option value="1">Deck 1</option>
-                <option value="2">Deck 2</option>
-                <option value="3">Deck 3</option>
-            </select>
-            <label style="color:yellow;">! Make sure your selected correct deck<br>then press submit</label>
-            <br>
-            <button id="dbtn" onclick="shuffle()">submit</button>
+            <h1>Your card is </h1><br>
+
+            <img id="res" src="" width="150">
         </div>
     </div>
-    <div id="result" style="display:none">
-        <br>
-        <h1>Your card is </h1><br>
-        <img id="res" src="" width="150">
-    </div>
-
 </body>
 
 </html>

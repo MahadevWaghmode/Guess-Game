@@ -19,8 +19,9 @@ function display() {
 }
 function shuffle()
 {
+    flag=flag+1;
         if(flag<3){
-            flag=flag+1;
+           
         var sel= document.getElementById("sbox");
         switch(sel.options[sel.selectedIndex].value){
             case "1":
